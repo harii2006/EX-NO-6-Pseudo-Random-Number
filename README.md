@@ -11,7 +11,33 @@ Pass the value for number of iterations and print the numbers.
 End the program.
 
 # PROGRAM:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+int main()
+{
+    int n, i;
+
+    srand(time(0));
+
+    printf("Enter the number of random numbers: ");
+    scanf("%d", &n);
+
+    printf("Pseudo Random Numbers are:\n");
+
+    for(i = 0; i < n; i++)
+    {
+        printf("%d\n", rand());
+    }
+
+    return 0;
+}
+```
 # OUTPUT:
+<img width="561" height="302" alt="image" src="https://github.com/user-attachments/assets/a15ea6ed-b8e3-4c95-b3e6-41eba23d4156" />
+
 
 # RESULT:
+Thus, the C program to implement pseudo-random number generation using the standard library was successfully executed, and the random numbers were generated and displayed.
